@@ -145,7 +145,7 @@ The steps to apply Abyss etirely manually can be found the detailed [SETUP](SETU
 
 > Quick Preview: 
 > ```css
-> @import url('https://cdn.jsdelivr.net/gh/AumGupta/?abyss-jellyfin@main/abyss.css');
+> @import url('https://cdn.jsdelivr.net/gh/AumGupta/abyss-jellyfin@main/abyss.css');
 >```
 > Copy and Paste in the branding section in your jellyfin dashboard.
 
