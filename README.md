@@ -143,6 +143,15 @@ The steps to install Abyss inside a docker container can be found the detailed [
 
 The steps to apply Abyss etirely manually can be found the detailed [SETUP](SETUP.md) guide.
 
+> Quick Preview: 
+> ```css
+> @import url('https://cdn.jsdelivr.net/gh/AumGupta/?> abyss-jellyfin@main/abyss.css');
+>```
+> Copy and Paste in the branding section in your jellyfin dashboard.
+
+> [!NOTE]
+> The quick preview import given above is useful only to have a look at how the theme looks, but to actually get the full feel of Abyss, follow all the steps in the SETUP guide.
+
 ### Plugin Support
 
 If you use additional plugins, like *Jellyfin Enhanced*, *Media Bar Enhanced*, etc, then you can follow the [Plugin Support](SETUP.md) steps in the SETUP.md guide.
