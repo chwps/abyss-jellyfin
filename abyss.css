@@ -663,6 +663,7 @@ a[data-role="button"]:hover {
     max-width: 15vw !important;
 }
 
+/* Search page top margin too large -> Search page fixes*/
 .button-submit {
     position: sticky;
     bottom: 24px;
@@ -2177,9 +2178,11 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
     background: transparent;
 }
 
+/* Breaks horizontal scrolling on search page, so commented out
 #searchPage .scrollSlider {
     overflow: hidden !important;
 }
+*/
 
 .noItemsMessage.centerMessage {
     font-weight: 100 !important;
@@ -2197,6 +2200,12 @@ div[data-role="controlgroup"] a[data-role="button"]:last-child {
         min-width: calc(100vw - 80px);
         padding-left: 44px;
     }
+}
+
+/*Search page fixes */
+
+#searchPage .smart-search-btn.button-submit {
+    margin-top: 4.464px !important;
 }
 
 /* 15. ANIMATIONS & KEYFRAMES */
