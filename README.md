@@ -1,11 +1,11 @@
 <div align="center">
 
-# [Abyss](https://aumgupta.github.io/abyss-jellyfin/) for Jellyfin
+# [Abyss](https://chwps.github.io/abyss-jellyfin/) for Jellyfin
 
 ![GitHub License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
-![GitHub Release](https://img.shields.io/github/v/release/AumGupta/abyss-jellyfin?style=for-the-badge)
-![jsDelivr Requests](https://img.shields.io/jsdelivr/gh/hm/AumGupta/abyss-jellyfin?style=for-the-badge&label=Usage&logo=none)
-[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/AumGupta/abyss-jellyfin/total?style=for-the-badge)](https://github.com/AumGupta/abyss-jellyfin/releases/latest)
+![GitHub Release](https://img.shields.io/github/v/release/chwps/abyss-jellyfin?style=for-the-badge)
+![jsDelivr Requests](https://img.shields.io/jsdelivr/gh/hm/chwps/abyss-jellyfin?style=for-the-badge&label=Usage&logo=none)
+[![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/chwps/abyss-jellyfin/total?style=for-the-badge)](https://github.com/chwps/abyss-jellyfin/releases/latest)
 
 <img alt="Abyss Logo" src="docs/assets/favicon/apple-touch-icon.png" style="width: 72px;">
 
@@ -13,7 +13,7 @@ A clean and minimal theme for Jellyfin with frosted glass surfaces, refined typo
 
 
 
-<a href="https://aumgupta.github.io/abyss-jellyfin/">
+<a href="https://chwps.github.io/abyss-jellyfin/">
   <img src="https://img.shields.io/badge/View%20%26%20Install-→-f5f5f7?style=for-the-badge&labelColor=2f2f2f" alt="Install" width=273.5 />
 </a>
 
@@ -59,7 +59,7 @@ A clean and minimal theme for Jellyfin with frosted glass surfaces, refined typo
 
 ### Linux & MacOS
 
-Download the latest **`abyss-setup-vX.X.X.sh`** from the [Releases](https://github.com/AumGupta/abyss-jellyfin/releases/latest) page and run it:
+Download the latest **`abyss-setup-vX.X.X.sh`** from the [Releases](https://github.com/chwps/abyss-jellyfin/releases/latest) page and run it:
 
 ```bash
 chmod +x abyss-setup-vX.X.X.sh
@@ -73,7 +73,7 @@ For detailed steps go to the [Setup Guide](SETUP.md).
 
 ### Windows
 
-Download the latest **`abyss-setup-vX.X.X.exe`** from the [Releases](https://github.com/AumGupta/abyss-jellyfin/releases/latest) page and run it. The installer will:
+Download the latest **`abyss-setup-vX.X.X.exe`** from the [Releases](https://github.com/chwps/abyss-jellyfin/releases/latest) page and run it. The installer will:
 
 - Apply the Abyss CSS to your Jellyfin server automatically
 - Set the dashboard theme to Dark
@@ -99,7 +99,7 @@ For detailed steps go to the [Setup Guide](SETUP.md).
 >
 > The installer will ask for your Jellyfin **server URL**, **admin username**, and **admin password**. These are sent directly to your own local Jellyfin server using the standard Jellyfin API, the same API your browser uses when you log in. Nothing is sent to any external server. The credentials are used only to authenticate and apply theme settings, and are never stored anywhere.
 >
-> The build process is fully transparent and auditable, click through to the [Actions log](https://github.com/AumGupta/abyss-jellyfin/actions) to see exactly which commit produced the exe you downloaded.
+> The build process is fully transparent and auditable, click through to the [Actions log](https://github.com/chwps/abyss-jellyfin/actions) to see exactly which commit produced the exe you downloaded.
 >
 > </details>
 
@@ -113,7 +113,7 @@ The steps to apply Abyss etirely manually can be found the detailed [SETUP](SETU
 
 > Quick Preview: 
 > ```css
-> @import url('https://cdn.jsdelivr.net/gh/AumGupta/abyss-jellyfin@main/abyss.css');
+> @import url('https://cdn.jsdelivr.net/gh/chwps/abyss-jellyfin@main/abyss.css');
 >```
 > Copy and Paste in the branding section in your jellyfin dashboard.
 
@@ -131,7 +131,7 @@ If you use additional plugins, like *Jellyfin Enhanced*, *Media Bar Enhanced*, e
 Override any of these variables at the top of your **Custom CSS** field, after the `@import` line:
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/AumGupta/abyss-jellyfin@main/abyss.css');
+@import url('https://cdn.jsdelivr.net/gh/chwps/abyss-jellyfin@main/abyss.css');
 
 :root {
     /* Accent colour: R, G, B only, no rgb() wrapper */
@@ -159,7 +159,7 @@ Override any of these variables at the top of your **Custom CSS** field, after t
 > 
 > You can also change the font by adding a *Google Fonts* (or any other source) `@import` and overriding the `body` font-family after your theme import. For example, to use [Inter](https://fonts.google.com/specimen/Inter):
 > ```css
-> @import url('https://cdn.jsdelivr.net/gh/AumGupta/abyss-jellyfin@main/abyss.css');
+> @import url('https://cdn.jsdelivr.net/gh/chwps/abyss-jellyfin@main/abyss.css');
 > @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 >
 > body {
@@ -197,8 +197,8 @@ Override any of these variables at the top of your **Custom CSS** field, after t
 
 ## Contributing
 
-Pull requests are welcome. For suggestions, feature requests, or bug reports, open an issue on the [Issues](https://github.com/AumGupta/abyss-jellyfin/issues) page. Please include your Jellyfin version and a screenshot where relevant.
+Pull requests are welcome. For suggestions, feature requests, or bug reports, open an issue on the [Issues](https://github.com/chwps/abyss-jellyfin/issues) page. Please include your Jellyfin version and a screenshot where relevant.
 
 ## License
 
-Abyss is licensed under the [MIT License](https://github.com/AumGupta/abyss-jellyfin?tab=MIT-1-ov-file).
+Abyss is licensed under the [MIT License](https://github.com/chwps/abyss-jellyfin?tab=MIT-1-ov-file).

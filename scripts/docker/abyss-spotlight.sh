@@ -5,7 +5,7 @@
 # make executable: chmod +x config/custom-cont-init.d/abyss-spotlight.sh
 # mount in compose: ./config/custom-cont-init.d:/custom-cont-init.d
 
-REPO="AumGupta/abyss-jellyfin"
+REPO="chwps/abyss-jellyfin"
 BRANCH="main"
 RAW="https://raw.githubusercontent.com/${REPO}/${BRANCH}"
 WEB_DIR="/usr/share/jellyfin/web"

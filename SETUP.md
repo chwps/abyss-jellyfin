@@ -1,12 +1,12 @@
 # Setup Guide
 
-For proper installation of [Abyss](https://aumgupta.github.io/abyss-jellyfin/), follow the exact steps mentioned below.
+For proper installation of [Abyss](https://chwps.github.io/abyss-jellyfin/), follow the exact steps mentioned below.
 
 <!-- Win -->
 <details>
 <summary><h2>Windows</h2></summary>
 
-Download the latest `abyss-setup-vX.X.X.exe` from the [Releases](https://github.com/AumGupta/abyss-jellyfin/releases/latest) page and run it, a command prompt screen will pop up:
+Download the latest `abyss-setup-vX.X.X.exe` from the [Releases](https://github.com/chwps/abyss-jellyfin/releases/latest) page and run it, a command prompt screen will pop up:
 
 > <img src="docs/assets/images/setup/e1.png" style="width:50%;"/>
 
@@ -47,7 +47,7 @@ Download the latest `abyss-setup-vX.X.X.exe` from the [Releases](https://github.
 <details>
 <summary><h2>Linux & MacOS</h2></summary>
 
-Download the latest **`abyss-setup-vX.X.X.sh`** from the [Releases](https://github.com/AumGupta/abyss-jellyfin/releases/latest) page and run it:
+Download the latest **`abyss-setup-vX.X.X.sh`** from the [Releases](https://github.com/chwps/abyss-jellyfin/releases/latest) page and run it:
 
 ```bash
 chmod +x abyss-setup-vX.X.X.sh
@@ -73,7 +73,7 @@ sudo ./abyss-setup-vX.X.X.sh
 The `linuxserver/jellyfin` image supports custom initialization scripts. This method automatically downloads and re-applies the Abyss spotlight theme every time your container starts or updates, making it completely persistent. 
 
 **1. Download the Init Script**
-Download the [`abyss-spotlight.sh`](https://raw.githubusercontent.com/AumGupta/abyss-jellyfin/main/scripts/docker/abyss-spotlight.sh) script and place it in your Jellyfin config directory under a new folder named `custom-cont-init.d`. Make sure it is executable.
+Download the [`abyss-spotlight.sh`](https://raw.githubusercontent.com/chwps/abyss-jellyfin/main/scripts/docker/abyss-spotlight.sh) script and place it in your Jellyfin config directory under a new folder named `custom-cont-init.d`. Make sure it is executable.
 
 ```bash
 mkdir -p ./jellyfin/config/custom-cont-init.d
@@ -98,7 +98,7 @@ services:
 
   * Go to your Jellyfin **Dashboard \> General \> Custom CSS** and add the import URL:
 ```
-@import url('https://cdn.jsdelivr.net/gh/AumGupta/abyss-jellyfin@main/abyss.css');
+@import url('https://cdn.jsdelivr.net/gh/chwps/abyss-jellyfin@main/abyss.css');
 ```
   * Restart your container (`docker compose up -d`). You can check the container logs to verify the script ran successfully.
 
@@ -114,7 +114,7 @@ services:
 > * linuxserver/jellyfin
 > * ghcr.io/hotio/jellyfin
 
-Download the latest **`abyss-setup-vX.X.X.sh`** from the [Releases](https://github.com/AumGupta/abyss-jellyfin/releases/latest)
+Download the latest **`abyss-setup-vX.X.X.sh`** from the [Releases](https://github.com/chwps/abyss-jellyfin/releases/latest)
 
 Copy it to the mounted config folder for your jellyfin container
 
@@ -154,7 +154,7 @@ Go to:
 Paste:
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/AumGupta/abyss-jellyfin@main/abyss.css');
+@import url('https://cdn.jsdelivr.net/gh/chwps/abyss-jellyfin@main/abyss.css');
 ```
 
 Save.
@@ -224,9 +224,9 @@ Inside `jellyfin-web`, create:
 
 Download these files from the repo:
 
-* [`scripts/spotlight/spotlight.html`](https://github.com/AumGupta/abyss-jellyfin/blob/main/scripts/spotlight/spotlight.html)
-* [`scripts/spotlight/spotlight.css`](https://github.com/AumGupta/abyss-jellyfin/blob/main/scripts/spotlight/spotlight.css)
-* [`scripts/spotlight/home-html.chunk.js`](https://github.com/AumGupta/abyss-jellyfin/blob/main/scripts/spotlight/home-html.chunk.js)
+* [`scripts/spotlight/spotlight.html`](https://github.com/chwps/abyss-jellyfin/blob/main/scripts/spotlight/spotlight.html)
+* [`scripts/spotlight/spotlight.css`](https://github.com/chwps/abyss-jellyfin/blob/main/scripts/spotlight/spotlight.css)
+* [`scripts/spotlight/home-html.chunk.js`](https://github.com/chwps/abyss-jellyfin/blob/main/scripts/spotlight/home-html.chunk.js)
 
 Place them in:
 
@@ -274,7 +274,7 @@ for the best visual experience.
 ## Customisation
 
 You can tweak colors, radius, and more here:
-[https://aumgupta.github.io/abyss-jellyfin/](https://aumgupta.github.io/abyss-jellyfin/)
+[https://chwps.github.io/abyss-jellyfin/](https://chwps.github.io/abyss-jellyfin/)
 
 
 </details>
@@ -286,7 +286,7 @@ You can tweak colors, radius, and more here:
 Just copy the plugin specific import from the list and paste below the `@import` line of `abyss.css` in a series:
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/AumGupta/abyss-jellyfin@main/abyss.css');
+@import url('https://cdn.jsdelivr.net/gh/chwps/abyss-jellyfin@main/abyss.css');
 
 [PASTE PLUGIN SPECIFIC @IMPORT HERE]
 ```
@@ -297,12 +297,12 @@ Just copy the plugin specific import from the list and paste below the `@import`
 ### 1. Jellyfin Enhanced `v11.3.0.0`
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/AumGupta/abyss-jellyfin@main/styles/abyss-je.css');
+@import url('https://cdn.jsdelivr.net/gh/chwps/abyss-jellyfin@main/styles/abyss-je.css');
 ```
 
 ### 2. Media Bar Enhanced `v1.9.0.0`
 ```css
-@import url('https://cdn.jsdelivr.net/gh/AumGupta/abyss-jellyfin@main/styles/abyss-mbe.css');
+@import url('https://cdn.jsdelivr.net/gh/chwps/abyss-jellyfin@main/styles/abyss-mbe.css');
 ```
 
 </details>

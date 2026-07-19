@@ -2,7 +2,7 @@ $ErrorActionPreference = "Stop"
 
 # Constants 
 
-$REPO     = "AumGupta/abyss-jellyfin"
+$REPO     = "chwps/abyss-jellyfin"
 $BRANCH   = "main"
 $RAW      = "https://raw.githubusercontent.com/$REPO/$BRANCH"
 $REPO_URL = "https://github.com/$REPO"
@@ -202,7 +202,7 @@ function Install-Abyss {
     Write-Step "Applying Abyss CSS..."
     try {
         $branding           = Invoke-RestMethod -Uri "$serverUrl/Branding/Configuration" -Method Get -Headers $apiHeaders
-        $branding.CustomCss = "@import url('https://cdn.jsdelivr.net/gh/$REPO@$BRANCH/abyss.css');`n/* Customise Abyss: https://aumgupta.github.io/abyss-jellyfin/ */"
+        $branding.CustomCss = "@import url('https://cdn.jsdelivr.net/gh/$REPO@$BRANCH/abyss.css');`n/* Customise Abyss: https://chwps.github.io/abyss-jellyfin/ */"
         Invoke-RestMethod -Uri "$serverUrl/System/Configuration/Branding" -Method Post -Headers $apiHeaders -Body ($branding | ConvertTo-Json -Depth 10) | Out-Null
         Write-Ok "Abyss CSS applied."
     } catch {
@@ -330,7 +330,7 @@ function Install-Abyss {
     Write-Host "  Tip: Turn on 'Show Backdrops' in display settings for best experience." -ForegroundColor Green
     Write-Host ""
     Write-Host "  Customise your theme:" -ForegroundColor White
-    Write-Host "    https://aumgupta.github.io/abyss-jellyfin/" -ForegroundColor Cyan
+    Write-Host "    https://chwps.github.io/abyss-jellyfin/" -ForegroundColor Cyan
     Write-Host ""
     Read-Host " Press Enter to exit"
 }
@@ -450,7 +450,7 @@ if (-not $isAdmin) {
     } elseif ($PSCommandPath) {
         Start-Process powershell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs
     } else {
-        Start-Process powershell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"irm https://raw.githubusercontent.com/AumGupta/abyss-jellyfin/main/setup.ps1 | iex`"" -Verb RunAs
+        Start-Process powershell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"irm https://raw.githubusercontent.com/chwps/abyss-jellyfin/main/setup.ps1 | iex`"" -Verb RunAs
     }
     exit
 }

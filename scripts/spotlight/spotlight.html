@@ -163,7 +163,7 @@
 
 				try {
 					const res = await fetch(
-						'https://api.github.com/repos/AumGupta/abyss-jellyfin/releases/latest',
+						'https://api.github.com/repos/chwps/abyss-jellyfin/releases/latest',
 						{ cache: 'no-store' }
 					);
 					if (!res.ok) return;
@@ -178,7 +178,7 @@
 					const dismissEl = $('update-dismiss');
 
 					textEl.textContent = `Abyss v${latest} available, download and re-run the installer to update.`;
-					linkEl.href = data.html_url || `https://github.com/AumGupta/abyss-jellyfin/releases/tag/v${latest}`;
+					linkEl.href = data.html_url || `https://github.com/chwps/abyss-jellyfin/releases/tag/v${latest}`;
 
 					toast.style.display = 'flex';
 					// Trigger CSS transition

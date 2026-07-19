@@ -3,10 +3,10 @@ set -euo pipefail
 
 # ==============================================================================
 # Abyss Jellyfin Theme - Linux / macOS Installer / Uninstaller
-# https://github.com/AumGupta/abyss-jellyfin
+# https://github.com/chwps/abyss-jellyfin
 # ==============================================================================
 
-REPO="AumGupta/abyss-jellyfin"
+REPO="chwps/abyss-jellyfin"
 BRANCH="main"
 RAW="https://raw.githubusercontent.com/${REPO}/${BRANCH}"
 REPO_URL="https://github.com/${REPO}"
@@ -298,7 +298,7 @@ install_abyss() {
 
     # Apply CSS
     step "Applying Abyss CSS..."
-    local css="@import url('https://cdn.jsdelivr.net/gh/${REPO}@${BRANCH}/abyss.css');\n/* Customise Abyss: https://aumgupta.github.io/abyss-jellyfin/ */"
+    local css="@import url('https://cdn.jsdelivr.net/gh/${REPO}@${BRANCH}/abyss.css');\n/* Customise Abyss: https://chwps.github.io/abyss-jellyfin/ */"
     local branding
     branding=$(curl -fsSL \
         -X GET "${server_url}/Branding/Configuration" \

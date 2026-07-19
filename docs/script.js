@@ -38,7 +38,7 @@ const dlAssets = { win: null, lin: null };
 
 (async () => {
   try {
-    const res = await fetch('https://api.github.com/repos/AumGupta/abyss-jellyfin/releases/latest');
+    const res = await fetch('https://api.github.com/repos/chwps/abyss-jellyfin/releases/latest');
     if (!res.ok) return;
     const data = await res.json();
     dlAssets.lin = (data.assets || []).find(a => a.name.endsWith('.sh')) || null;
@@ -77,7 +77,7 @@ function selectOS(os) {
 
   const isWin = os === 'windows';
   const asset = isWin ? dlAssets.win : dlAssets.lin;
-  const fallback = 'https://github.com/AumGupta/abyss-jellyfin/releases/latest';
+  const fallback = 'https://github.com/chwps/abyss-jellyfin/releases/latest';
   const ext = isWin ? '.exe' : '.sh';
   const platform = os === 'windows' ? 'Windows' : os === 'macos' ? 'macOS' : 'Linux';
   const runNote = isWin
